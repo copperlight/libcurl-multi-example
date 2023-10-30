@@ -44,7 +44,7 @@ int main(void)
         /* First set the URL that is about to receive our POST. This URL can
            just as well be an https:// URL if that is what should receive the
            data. */
-        curl_easy_setopt(curl, CURLOPT_URL, "http://postit.example.com/moo.cgi");
+        curl_easy_setopt(curl, CURLOPT_URL, "https://httpbin.org/post");
         /* Now specify the POST data */
         curl_easy_setopt(curl, CURLOPT_POSTFIELDS, "name=daniel&project=curl");
 

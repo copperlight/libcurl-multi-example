@@ -40,7 +40,7 @@ int main(void)
 
     curl = curl_easy_init();
     if(curl) {
-        curl_easy_setopt(curl, CURLOPT_URL, "https://example.com");
+        curl_easy_setopt(curl, CURLOPT_URL, "https://httpbin.org/post");
         curl_easy_setopt(curl, CURLOPT_POSTFIELDS, postthis);
 
         /* if we do not provide POSTFIELDSIZE, libcurl will strlen() by

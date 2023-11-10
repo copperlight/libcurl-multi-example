@@ -15,7 +15,7 @@ source venv/bin/activate
 ```
 
 ```shell
-# run exmaples
+# run examples
 ./cmake-build/bin/10-at-a-time
 ./cmake-build/bin/crawler
 ```

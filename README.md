@@ -6,6 +6,20 @@ variations thereof in C++, in order to explore how the [curl multi interface] wo
 [curl API Examples]: https://curl.se/libcurl/c/example.html
 [curl multi interface]: https://curl.se/libcurl/c/libcurl-multi.html
 
+## Local Development
+
+```shell
+./setup-venv.sh
+source venv/bin/activate
+./build.sh  # [clean]
+```
+
+```shell
+# run exmaples
+./cmake-build/bin/10-at-a-time
+./cmake-build/bin/crawler
+```
+
 ## Debugging
 
 Diagnose segfaults on MacOS:

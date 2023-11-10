@@ -9,13 +9,19 @@ variations thereof in C++, in order to explore how the [curl multi interface] wo
 ## Local Development
 
 ```shell
+# install necessary tools
+brew install cmake
+```
+
+```shell
+# build the project
 ./setup-venv.sh
 source venv/bin/activate
 ./build.sh  # [clean]
 ```
 
 ```shell
-# run examples
+# run the examples
 ./cmake-build/bin/10-at-a-time
 ./cmake-build/bin/crawler
 ```

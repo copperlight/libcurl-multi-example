@@ -9,35 +9,16 @@ variations thereof in C++, in order to explore how the [curl multi interface] wo
 ## Local Development
 
 ```shell
-# install necessary tools
+# install necessary build tools
 brew install cmake
-```
 
-```shell
-# build the project
+# setup python venv and activate, to gain access to conan cli
 ./setup-venv.sh
 source venv/bin/activate
-./build.sh  # [clean]
-```
 
-```shell
+./build.sh  # [clean|clean --confirm|skiptest]
+
 # run the examples
 ./cmake-build/bin/10-at-a-time
 ./cmake-build/bin/crawler
-```
-
-## Debugging
-
-Diagnose segfaults on MacOS:
-
-```shell
-$ lldb --file /path/to/program
-...
-(lldb) r
-Process 89510 launched
-...
-(lldb) bt
-* thread #1, queue = 'com.apple.main-thread', stop reason = EXC_BAD_ACCESS (code=1, address=0x726f00)
-  * frame #0: 0x00007fff73856e52 libsystem_platform.dylib`_platform_strlen + 18
-...
 ```

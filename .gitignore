@@ -1,8 +1,6 @@
-**/*.inc
 .DS_Store
 .idea/
-cmake-build-debug/
+CMakeUserPresets.json
 cmake-build/
-ska/
-spectator/netflix_config.cc
+conan_provider.cmake
 venv/

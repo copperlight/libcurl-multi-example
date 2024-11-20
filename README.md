@@ -19,6 +19,6 @@ source venv/bin/activate
 ./build.sh  # [clean|clean --confirm|skiptest]
 
 # run the examples
-./cmake-build/10-at-a-time
-./cmake-build/crawler
+./cmake-build/bin/10-at-a-time
+./cmake-build/bin/crawler
 ```
